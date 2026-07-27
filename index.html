@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="中国联通格物工业互联网平台，以工业物模型、工业软网关与工业大模型为核心，提供云网边端智安一体化的工业数智底座。"
+    />
+    <meta name="theme-color" content="#e60012" />
+    <title>格物工业互联网平台｜联通工业数智底座</title>
+    <link rel="icon" href="assets/logo-gewu.png" />
+    <link rel="preload" href="assets/hero-industrial.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-model" viewBox="0 0 24 24">
+        <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
+        <path d="m4 12 8 4.5 8-4.5M4 16.5l8 4.5 8-4.5" />
+      </symbol>
+      <symbol id="icon-gateway" viewBox="0 0 24 24">
+        <rect x="3" y="6" width="18" height="12" rx="3" />
+        <path d="M7 10h4M7 14h2M16 10h1M16 14h1M12 3v3M12 18v3" />
+      </symbol>
+      <symbol id="icon-ai" viewBox="0 0 24 24">
+        <path d="M12 3a4 4 0 0 0-4 4v1a4 4 0 0 0-2 7.5A4 4 0 0 0 12 19V3Z" />
+        <path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1 2 7.5A4 4 0 0 1 12 19M8 9h2M14 9h2M8 14h2M14 14h2M12 19v2" />
+      </symbol>
+      <symbol id="icon-factory" viewBox="0 0 24 24">
+        <path d="M3 21V10l6 3V9l6 3V5h4v16H3Z" />
+        <path d="M7 17h2M12 17h2M17 17h2" />
+      </symbol>
+      <symbol id="icon-mine" viewBox="0 0 24 24">
+        <path d="m4 19 5-11 3 4 3-7 5 14H4Z" />
+        <path d="M8 19v-3h8v3M10 16l2-4 2 4" />
+      </symbol>
+      <symbol id="icon-chip" viewBox="0 0 24 24">
+        <rect x="6" y="6" width="12" height="12" rx="2" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3M9 9h6v6H9z" />
+      </symbol>
+      <symbol id="icon-flask" viewBox="0 0 24 24">
+        <path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" />
+        <path d="M7.5 16h9M9 13h6" />
+      </symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24">
+        <path d="M20 4C10 4 5 8 5 15c0 3 2 5 5 5 7 0 10-8 10-16Z" />
+        <path d="M4 21c3-6 7-9 13-13" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M14 7l5 5-5 5" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="格物工业互联网平台首页">
+          <img src="assets/logo-gewu.png" alt="联通格物" />
+          <span>工业互联网平台</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">打开导航</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+          <a href="platform.html" data-nav="platform">平台能力</a>
+          <a href="industries.html" data-nav="industries">行业版本</a>
+          <a href="unicom.html" data-nav="unicom">联通特色</a>
+          <a href="scenarios.html" data-nav="scenarios">场景方案</a>
+          <a href="services.html" data-nav="services">服务体系</a>
+          <a href="mall.html" data-nav="mall">商城</a>
+          <a href="ecosystem.html" data-nav="ecosystem">生态合作</a>
+        </nav>
+        <button class="button button-small nav-cta js-open-consult" type="button">预约体验</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> 国家级 A 级“双跨”平台</p>
+            <h1 id="hero-title">让工业万物互联<br /><em>让数据生长智能</em></h1>
+            <p class="hero-lead">
+              中国联通格物工业互联网平台，以设备连接为起点、以工业数据为核心、以场景智能为价值，
+              打造可生长、可复制、可信赖的工业数智底座。
+            </p>
+            <div class="hero-actions">
+              <button class="button js-open-consult" type="button">
+                预约平台演示
+                <svg><use href="#icon-arrow"></use></svg>
+              </button>
+              <a class="button button-ghost" href="platform.html">探索平台能力</a>
+            </div>
+            <div class="hero-tags" aria-label="平台特色">
+              <span>工业物模型</span>
+              <span>百种协议接入</span>
+              <span>端边云协同</span>
+              <span>工业大模型</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-float hero-float-a reveal" aria-hidden="true">
+          <i></i>
+          <div><strong>1313万+</strong><span>工业设备接入</span></div>
+        </div>
+        <div class="hero-float hero-float-b reveal" aria-hidden="true">
+          <b>AI</b>
+          <div><strong>格物小知</strong><span>工业知识随问随用</span></div>
+        </div>
+        <a class="scroll-hint" href="#platform" aria-label="向下浏览">
+          <span>SCROLL</span><i></i>
+        </a>
+      </section>
+
+      <section class="proof-strip" aria-label="平台规模">
+        <div class="container proof-grid">
+          <div class="proof-item reveal">
+            <strong><span class="counter" data-target="31">31</span><small>省</small></strong>
+            <p>全国服务覆盖</p>
+          </div>
+          <div class="proof-item reveal">
+            <strong><span class="counter" data-target="2000">2,000</span><small>+</small></strong>
+            <p>沉淀工业物模型</p>
+          </div>
+          <div class="proof-item reveal">
+            <strong><span class="counter" data-target="100">100</span><small>+</small></strong>
+            <p>主流工业协议</p>
+          </div>
+          <div class="proof-item reveal">
+            <strong><span class="counter" data-target="20">20</span><small>万+</small></strong>
+            <p>注册工业用户</p>
+          </div>
+          <div class="proof-item reveal">
+            <strong><span class="counter" data-target="30">30</span><small>+</small></strong>
+            <p>工业行业覆盖</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section platform-section" id="platform">
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> GEWU FOUNDATION</p>
+              <h2>一座可持续生长的<br />工业数智底座</h2>
+            </div>
+            <p>
+              从设备接入、数据标准化到场景智能，把分散的 OT / IT 能力组织成一套可复用、可编排、
+              可演进的平台能力，支撑集团、工厂、车间与产线多层级协同。
+            </p>
+          </div>
+
+          <div class="capability-shell reveal">
+            <div class="capability-tabs" role="tablist" aria-label="三大核心能力">
+              <button class="capability-tab active" type="button" role="tab" aria-selected="true" data-capability="model">
+                <span>01</span>
+                <svg><use href="#icon-model"></use></svg>
+                <b>工业物模型</b>
+                <small>让装备可描述</small>
+              </button>
+              <button class="capability-tab" type="button" role="tab" aria-selected="false" data-capability="gateway">
+                <span>02</span>
+                <svg><use href="#icon-gateway"></use></svg>
+                <b>工业软网关</b>
+                <small>让系统可互联</small>
+              </button>
+              <button class="capability-tab" type="button" role="tab" aria-selected="false" data-capability="ai">
+                <span>03</span>
+                <svg><use href="#icon-ai"></use></svg>
+                <b>工业大模型</b>
+                <small>让场景可智能</small>
+              </button>
+            </div>
+
+            <div class="capability-panel" role="tabpanel" aria-live="polite">
+              <div class="capability-copy">
+                <p class="panel-kicker" id="cap-kicker">MODEL · 标准化数据语言</p>
+                <h3 id="cap-title">用一个模型，读懂每一台设备</h3>
+                <p id="cap-desc">
+                  独创工业物模型架构，将设备属性、事件与服务统一描述，解耦物理装备与软件系统，
+                  让跨厂区、跨品牌、跨年代的设备数据成为可治理的数据资产。
+                </p>
+                <ul id="cap-points">
+                  <li><svg><use href="#icon-check"></use></svg>标准统一：跨系统共享同一设备语义</li>
+                  <li><svg><use href="#icon-check"></use></svg>积木开发：模型资产按场景快速复用</li>
+                  <li><svg><use href="#icon-check"></use></svg>AI 治理：辅助构建、分类与持续运营</li>
+                  <li><svg><use href="#icon-check"></use></svg>开放互通：标准接口连接产业生态</li>
+                </ul>
+              </div>
+              <div class="capability-visual" id="cap-visual" data-mode="model" aria-hidden="true">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="visual-core">
+                  <svg><use href="#icon-model"></use></svg>
+                  <strong>设备语义中心</strong>
+                  <small>属性 · 事件 · 服务</small>
+                </div>
+                <div class="visual-node node-a">设备</div>
+                <div class="visual-node node-b">产线</div>
+                <div class="visual-node node-c">工厂</div>
+                <div class="visual-node node-d">应用</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edition-grid">
+            <article class="edition-card reveal">
+              <span>01 / 极简版</span>
+              <h3>小微企业 · 快速上云</h3>
+              <p>低成本接入、基础监测、运维告警与能耗统计，帮助单车间、小产线快速迈出数字化第一步。</p>
+              <ul>
+                <li>开箱即用</li>
+                <li>按需扩展</li>
+                <li>轻交付</li>
+              </ul>
+            </article>
+            <article class="edition-card featured reveal">
+              <span>02 / 轻量版</span>
+              <h3>中小工厂 · 业务闭环</h3>
+              <p>围绕设备接入、生产协同、实时分析和设备运维，形成面向专属行业场景的轻量能力组合。</p>
+              <ul>
+                <li>场景聚焦</li>
+                <li>数据处理</li>
+                <li>可视化开发</li>
+              </ul>
+            </article>
+            <article class="edition-card reveal">
+              <span>03 / 标准版</span>
+              <h3>集团企业 · 全域治理</h3>
+              <p>支撑多工厂统一管控、全链路数据治理、资源调度与集团级 AI 决策，构建企业级工业数字底座。</p>
+              <ul>
+                <li>多级协同</li>
+                <li>全域治理</li>
+                <li>智能决策</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section industry-section" id="industries">
+        <div class="industry-watermark" aria-hidden="true">INDUSTRY</div>
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow light"><span></span> FIVE INDUSTRY EDITIONS</p>
+            <h2>五大行业版，不止“适配”行业<br /><em>更沉淀行业知识</em></h2>
+            <p>基于统一底座，按行业重组协议、物模型、组件和应用，让交付从“项目定制”走向“能力复用”。</p>
+          </div>
+
+          <div class="industry-layout reveal">
+            <div class="industry-nav" role="tablist" aria-label="五大行业版">
+              <button class="industry-tab active" type="button" role="tab" aria-selected="true" data-industry="equipment">
+                <svg><use href="#icon-factory"></use></svg><span><b>上海装备版</b><small>高端装备 · 离散制造</small></span><i>01</i>
+              </button>
+              <button class="industry-tab" type="button" role="tab" aria-selected="false" data-industry="mine">
+                <svg><use href="#icon-mine"></use></svg><span><b>山西矿山版</b><small>少人无人 · 安全生产</small></span><i>02</i>
+              </button>
+              <button class="industry-tab" type="button" role="tab" aria-selected="false" data-industry="electronics">
+                <svg><use href="#icon-chip"></use></svg><span><b>广东电子版</b><small>半导体 · PCB</small></span><i>03</i>
+              </button>
+              <button class="industry-tab" type="button" role="tab" aria-selected="false" data-industry="chemical">
+                <svg><use href="#icon-flask"></use></svg><span><b>江苏化工版</b><small>设备健康 · 智能诊断</small></span><i>04</i>
+              </button>
+              <button class="industry-tab" type="button" role="tab" aria-selected="false" data-industry="light">
+                <svg><use href="#icon-leaf"></use></svg><span><b>福建轻工版</b><small>纺织 · 食品 · 鞋服</small></span><i>05</i>
+              </button>
+            </div>
+
+            <div class="industry-panel" role="tabpanel" aria-live="polite">
+              <div class="industry-content">
+                <p class="panel-kicker" id="industry-kicker">EQUIPMENT MANUFACTURING</p>
+                <h3 id="industry-title">让复杂装备拥有统一的数字语言</h3>
+                <p id="industry-desc">
+                  面向航天、船舶及高端装备，沉淀热处理、机加工、环境试验、生产辅助等设备模型，
+                  贯通设备、MES / DNC、PLC / DCS 与 AR 应用。
+                </p>
+                <div class="industry-metrics" id="industry-metrics">
+                  <div><strong>26</strong><span>类设备物模型</span></div>
+                  <div><strong>4</strong><span>类重点工艺</span></div>
+                  <div><strong>20+</strong><span>项目实践</span></div>
+                </div>
+                <div class="industry-scenes">
+                  <p>典型场景</p>
+                  <div id="industry-scenes">
+                    <span>设备联网</span><span>系统互通</span><span>AGV 调度</span><span>数字化车间</span>
+                  </div>
+                </div>
+              </div>
+              <div class="industry-dashboard" id="industry-dashboard" data-theme="equipment" aria-hidden="true">
+                <div class="dash-top">
+                  <span><i></i>GEWU DIGITAL FACTORY</span>
+                  <b>LIVE</b>
+                </div>
+                <div class="dash-body">
+                  <div class="dash-kpi">
+                    <small>设备在线率</small><strong>98.7%</strong>
+                    <svg viewBox="0 0 120 36"><path d="M2 30C18 28 25 14 39 20s20-8 33-3 18-10 46-13" /></svg>
+                  </div>
+                  <div class="dash-radar">
+                    <i></i><i></i><i></i><i></i>
+                    <span></span>
+                  </div>
+                  <div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+                <div class="dash-flow">
+                  <span>设备</span><i></i><span>边缘</span><i></i><span>平台</span><i></i><span>应用</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section unicom-section" id="unicom">
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> UNICOM DIFFERENCE</p>
+              <h2>不只是一个平台<br />更是一套联通能力</h2>
+            </div>
+            <p>
+              将中国联通的 5G 专网、云资源、边缘计算、工业终端、安全与 AI 能力编排成统一服务链，
+              让连接有确定性、数据有连续性、智能有落点。
+            </p>
+          </div>
+
+          <div class="stack-architecture reveal">
+            <div class="stack-rail">
+              <span>端</span><i></i><span>边</span><i></i><span>网</span><i></i><span>云</span><i></i><span>智</span><i></i><span>安</span>
+            </div>
+            <div class="stack-cards">
+              <article>
+                <span>01</span><strong>雁飞工业终端</strong>
+                <p>模组、网关、传感器与工业控制终端，形成现场数据入口。</p>
+              </article>
+              <article>
+                <span>02</span><strong>边缘智能协同</strong>
+                <p>本地采集、规则计算、应用下发，保障实时业务连续运行。</p>
+              </article>
+              <article>
+                <span>03</span><strong>5G 确定性网络</strong>
+                <p>专网、LAN、定位授时等能力，支撑低时延与高可靠连接。</p>
+              </article>
+              <article>
+                <span>04</span><strong>联通云算力底座</strong>
+                <p>统一承载工业数据、应用与模型，支持弹性部署和云边协同。</p>
+              </article>
+              <article>
+                <span>05</span><strong>工业智能引擎</strong>
+                <p>格物小知辅助物模型、协议与场景应用生成，加速知识复用。</p>
+              </article>
+              <article>
+                <span>06</span><strong>全栈安全运营</strong>
+                <p>从设备身份、网络隔离到数据权限与运营审计，贯穿全链路。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="unicom-band reveal">
+            <div>
+              <span>云网融合</span>
+              <strong>连接与计算一体编排</strong>
+            </div>
+            <div>
+              <span>国资央企</span>
+              <strong>自主可控与可信交付</strong>
+            </div>
+            <div>
+              <span>全国一体</span>
+              <strong>31 省本地化服务体系</strong>
+            </div>
+            <div>
+              <span>生态开放</span>
+              <strong>能力、数据与应用共生</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scenario-section" id="scenarios">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow"><span></span> SCENARIO VALUE</p>
+            <h2>从连接设备，到看见价值</h2>
+            <p>围绕生产现场六类高频需求，把数据链路、业务闭环和 AI 能力组合成可落地的场景方案。</p>
+          </div>
+          <div class="scenario-grid">
+            <article class="scenario-card scenario-primary reveal">
+              <span>01</span>
+              <div class="scenario-icon"><svg><use href="#icon-gateway"></use></svg></div>
+              <h3>设备智联与运维</h3>
+              <p>多协议采集、状态监测、预测维护、备件协同，提升设备综合效率。</p>
+              <ul><li>设备画像</li><li>故障预警</li><li>远程运维</li></ul>
+            </article>
+            <article class="scenario-card reveal">
+              <span>02</span>
+              <div class="scenario-icon"><svg><use href="#icon-model"></use></svg></div>
+              <h3>质量管理与追溯</h3>
+              <p>贯通工艺、设备与检测数据，定位波动来源，形成全过程质量闭环。</p>
+              <ul><li>AI 质检</li><li>工艺追溯</li><li>良率分析</li></ul>
+            </article>
+            <article class="scenario-card reveal">
+              <span>03</span>
+              <div class="scenario-icon"><svg><use href="#icon-ai"></use></svg></div>
+              <h3>生产智能辅助</h3>
+              <p>用实时数据与工业知识辅助排产、操作与异常处置，缩短决策链路。</p>
+              <ul><li>智能问数</li><li>作业指导</li><li>异常闭环</li></ul>
+            </article>
+            <article class="scenario-card reveal">
+              <span>04</span>
+              <div class="scenario-icon"><svg><use href="#icon-flask"></use></svg></div>
+              <h3>安全生产管控</h3>
+              <p>融合设备、环境与视频感知，构建风险识别、预警与处置闭环。</p>
+              <ul><li>风险感知</li><li>联动预警</li><li>合规留痕</li></ul>
+            </article>
+            <article class="scenario-card reveal">
+              <span>05</span>
+              <div class="scenario-icon"><svg><use href="#icon-leaf"></use></svg></div>
+              <h3>能源与双碳</h3>
+              <p>分层分项计量、能效对标与用能优化，让每一度能耗清晰可控。</p>
+              <ul><li>能源看板</li><li>能效分析</li><li>碳资产</li></ul>
+            </article>
+            <article class="scenario-card reveal">
+              <span>06</span>
+              <div class="scenario-icon"><svg><use href="#icon-factory"></use></svg></div>
+              <h3>集团协同运营</h3>
+              <p>统一多工厂指标与数据口径，从现场状态穿透到集团经营决策。</p>
+              <ul><li>多厂协同</li><li>经营驾驶舱</li><li>资源调度</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section value-section" id="value">
+        <div class="container value-layout">
+          <div class="value-copy reveal">
+            <p class="eyebrow light"><span></span> PLATFORM IN ACTION</p>
+            <h2>平台有尺度<br />赋能有温度</h2>
+            <p>
+              从第一台设备到多工厂协同，格物以可验证的连接规模、能力资产和全国服务网络，
+              陪伴企业持续进化。
+            </p>
+            <a class="text-link" href="services.html">查看交付服务体系 <svg><use href="#icon-arrow"></use></svg></a>
+          </div>
+          <div class="value-stats">
+            <div class="value-stat reveal"><strong><span class="counter" data-target="1313">1,313</span><small>万+</small></strong><p>工业设备连接规模</p></div>
+            <div class="value-stat reveal"><strong><span class="counter" data-target="2000">2,000</span><small>+</small></strong><p>工业物模型资产</p></div>
+            <div class="value-stat reveal"><strong><span class="counter" data-target="100">100</span><small>+</small></strong><p>主流工业协议适配</p></div>
+            <div class="value-stat reveal"><strong><span class="counter" data-target="31">31</span><small>省</small></strong><p>属地化支撑网络</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> SERVICE JOURNEY</p>
+              <h2>一次选择<br />全程陪伴</h2>
+            </div>
+            <p>以业务价值为起点，以持续运营为终点。方案、平台、网络与服务团队协同，让项目走得稳、用得久。</p>
+          </div>
+          <div class="journey-track">
+            <article class="journey-item reveal"><span>01</span><i></i><h3>诊断咨询</h3><p>梳理业务目标与数字化现状，识别高价值切入点。</p></article>
+            <article class="journey-item reveal"><span>02</span><i></i><h3>蓝图设计</h3><p>规划连接、数据、应用与安全架构，明确建设边界。</p></article>
+            <article class="journey-item reveal"><span>03</span><i></i><h3>场景验证</h3><p>围绕关键场景开展小范围验证，用真实数据校验价值。</p></article>
+            <article class="journey-item reveal"><span>04</span><i></i><h3>规模实施</h3><p>标准化能力包与属地化交付协同，快速复制到多工厂。</p></article>
+            <article class="journey-item reveal"><span>05</span><i></i><h3>持续运营</h3><p>监测平台运行、沉淀行业资产，迭代数据与智能应用。</p></article>
+          </div>
+
+          <div class="insight-block reveal">
+            <div class="insight-heading">
+              <p class="eyebrow"><span></span> INDUSTRIAL INSIGHT</p>
+              <h2>把行业方法<br />沉淀成增长知识</h2>
+            </div>
+            <div class="insight-list">
+              <article><span>能力图谱</span><h3>工业物模型：从设备描述走向数据资产</h3><a href="platform.html" aria-label="查看工业物模型能力"><svg><use href="#icon-arrow"></use></svg></a></article>
+              <article><span>技术观察</span><h3>云边协同：实时业务如何获得连续性</h3><a href="unicom.html" aria-label="查看云边协同能力"><svg><use href="#icon-arrow"></use></svg></a></article>
+              <article><span>行业实践</span><h3>五大行业版：用标准底座承载专属知识</h3><a href="industries.html" aria-label="查看行业版"><svg><use href="#icon-arrow"></use></svg></a></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-pattern" aria-hidden="true"></div>
+        <div class="container final-cta-content reveal">
+          <p class="eyebrow light"><span></span> START WITH GEWU</p>
+          <h2>从一个场景出发<br />连接下一座智能工厂</h2>
+          <p>告诉我们您的行业与挑战，格物团队将为您提供专属平台演示与初步方案建议。</p>
+          <button class="button button-white js-open-consult" type="button">预约专属演示 <svg><use href="#icon-arrow"></use></svg></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-gewu.png" alt="联通格物" />
+          <p>以连接汇聚数据，以智能驱动制造。<br />成为可信赖的工业数智化同行者。</p>
+        </div>
+        <div class="footer-links">
+          <div><strong>平台与方案</strong><a href="platform.html">平台能力</a><a href="industries.html">行业版本</a><a href="scenarios.html">场景解决方案</a></div>
+          <div><strong>产品与服务</strong><a href="mall.html">产品商城</a><a href="services.html">服务体系</a><a href="ecosystem.html">生态合作</a></div>
+          <div><strong>联通特色</strong><a href="unicom.html">云网边端智安</a><a href="#value">平台实力</a><a href="#journey">交付旅程</a></div>
+        </div>
+        <div class="footer-contact">
+          <strong>开启工业数智之旅</strong>
+          <p>平台咨询与能力体验</p>
+          <button class="button button-small js-open-consult" type="button">联系我们</button>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 中国联通 · 格物工业互联网平台</p>
+        <p>数字信息运营服务国家队 · 数字技术融合创新排头兵</p>
+      </div>
+    </footer>
+
+    <dialog class="consult-dialog" id="consult-dialog" aria-labelledby="consult-title">
+      <div class="dialog-shell">
+        <button class="dialog-close" type="button" aria-label="关闭咨询窗口">×</button>
+        <div class="dialog-intro">
+          <p class="eyebrow light"><span></span> CONTACT GEWU</p>
+          <h2 id="consult-title">预约专属<br />平台演示</h2>
+          <p>留下您的需求方向，我们将基于行业场景为您准备更有针对性的交流内容。</p>
+          <div class="dialog-promise"><span>✓</span> 本页面仅演示交互，不会上传或发送数据</div>
+        </div>
+        <form class="consult-form">
+          <label>您的称呼<input type="text" name="name" placeholder="请输入称呼" required /></label>
+          <label>所属企业<input type="text" name="company" placeholder="请输入企业名称" required /></label>
+          <label>关注方向
+            <select name="interest">
+              <option>工业互联网平台基座</option>
+              <option>上海装备版</option>
+              <option>山西矿山版</option>
+              <option>广东电子版</option>
+              <option>江苏化工版</option>
+              <option>福建轻工版</option>
+            </select>
+          </label>
+          <label>需求简述<textarea name="message" rows="4" placeholder="例如：希望实现多工厂设备接入与统一运营"></textarea></label>
+          <button class="button" type="submit">生成预约意向 <svg><use href="#icon-arrow"></use></svg></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
